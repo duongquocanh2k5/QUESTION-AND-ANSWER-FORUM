@@ -1,0 +1,456 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #4fd6e8;
+    padding: 1rem;
+    border-bottom: 5px solid #997979;
+}
+
+h1 {
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 0px #444;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #443A5C;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    padding: 0.5rem 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #4fd6e8;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: 80vh;
+}
+
+/* Question Block Styles */
+blockquote {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Form Styles */
+form {
+    margin: 1rem 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+button, input[type="submit"] {
+    background-color: #4fd6e8;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #3bc1d3;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    border-left: 3px solid #4fd6e8;
+    position: relative;
+}
+
+.comment small {
+    color: #666;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #FFC9A7;
+    margin-top: 2rem;
+}
+
+/* Utility Classes */
+.inline-form {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.edit-delete-buttons {
+    margin: 1rem 0;
+}
+
+.edit-delete-buttons form {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Welcome Section */
+.welcome-header {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #4fd6e8, #443A5C);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.welcome-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+
+/* Delete Button Styles */
+.delete-btn, .delete-button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.delete-btn:hover, .delete-button:hover {
+    background-color: #cc0000;
+}
+
+/* User Table Styles */
+.user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-table th,
+.user-table td {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* Table Column Widths */
+.user-table td:first-child,
+.user-table th:first-child {
+    width: 10%;
+}
+
+.user-table td:nth-child(2),
+.user-table th:nth-child(2),
+.user-table td:nth-child(3),
+.user-table th:nth-child(3) {
+    width: 35%;
+}
+
+.user-table td:last-child,
+.user-table th:last-child {
+    width: 20%;
+}
+
+.user-table tr:hover td {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease;
+}
+
+/* Add User Form Styles */
+.add-user-form {
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-user-form div {
+    margin-bottom: 15px;
+}
+
+.add-user-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-user-form input[type="text"],
+.add-user-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.add-user-form input[type="submit"] {
+    background-color: #44f2ef;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-user-form input[type="submit"]:hover {
+    background-color: #45ffff;
+}
+
+/* Spacing */
+h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.5rem 0;
+    }
+    
+    .user-table {
+        border-spacing: 10px 0;
+    }
+}
+
+/* Add Module Form Styles */
+.add-module-form {
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-module-form div {
+    margin-bottom: 15px;
+}
+
+.add-module-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-module-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.add-module-form input[type="submit"] {
+    background-color: #44f2ef;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-module-form input[type="submit"]:hover {
+    background-color: #45ffff;
+}
+
+/* Edit Question Styles */
+.current-image {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.current-image img {
+    margin-top: 10px;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Form group spacing */
+form div {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Textarea specific styling */
+textarea[name="ask"] {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #4fd6e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3bc1d3;
+}
+
+/* Image upload section styles */
+.image-upload-section {
+    margin: 20px 0;
+}
+
+.file-input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed #ddd;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.file-input:hover {
+    border-color: #4fd6e8;
+}
+
+.file-info {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.current-image {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.current-image img {
+    max-width: 200px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.current-image p {
+    color: #666;
+    margin-bottom: 10px;
+}
